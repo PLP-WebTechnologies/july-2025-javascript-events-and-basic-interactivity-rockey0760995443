@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Welcome to the Interactive Web Page</h1>
+
+  <!-- Interactive Section 1: Light/Dark Mode Toggle -->
+  <section id="theme-section">
+    <h2>Theme Toggle</h2>
+    <button id="theme-toggle-btn">Toggle Light/Dark Mode</button>
+  </section>
+
+  <!-- Interactive Section 2: Simple Counter -->
+  <section id="counter-section">
+    <h2>Counter</h2>
+    <button id="decrement-btn">-</button>
+    <span id="counter-value">0</span>
+    <button id="increment-btn">+</button>
+  </section>
+
+  <!-- Form Section -->
+  <section id="form-section">
+    <h2>Sign Up Form</h2>
+    <form id="signup-form" novalidate>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <small class="error-message" id="name-error"></small>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <small class="error-message" id="email-error"></small>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <small class="error-message" id="password-error"></small>
+      </div>
+      <button type="submit">Submit</button>
+      <div id="form-success" style="color: green; margin-top:10px;"></div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
